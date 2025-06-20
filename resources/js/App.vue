@@ -13,7 +13,7 @@
                 alt="Deal Hive Logo"
                 class="cursor-pointer"
                 @click="this.$router.push('/')"
-                src="https://img.pikbest.com/png-images/20240804/honey-bee-cartoon-character-illustration-png_10698271.png!sw800"
+                src="https://pngimg.com/d/bee_PNG74719.png"
             />
 
             <!-- NOTE Search area -->
