@@ -9,7 +9,6 @@
 </template>
 
 <script setup>
-import AppBar from './components/layouts/AppBar.vue';
 
 </script>
 
