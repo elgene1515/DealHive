@@ -1,11 +1,10 @@
 <template>
-    <v-app>
-        <v-app-bar
+    <v-app-bar
         prominent
         density="compact"
         class="pr-10 pl-10"
         color="amber-accent-4"
-        >
+    >
         <!-- NOTE Appbar logo -->
         <AppLogo />
 
@@ -90,8 +89,7 @@
             </v-list-item>
             </v-list>
         </v-menu>
-        </v-app-bar>
-    </v-app>
+    </v-app-bar>
 </template>
 
 <script setup>
