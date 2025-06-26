@@ -10,11 +10,11 @@
 </template>
 
 <script setup>
-defineOptions({name: 'AppLogo'})
+    defineOptions({name: 'AppLogo'})
 
-function goHome(){
-    router.push('/')
-}
+    function goHome(){
+        router.push('/')
+    }
 
 </script>
 

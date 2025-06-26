@@ -12,7 +12,7 @@
 </template>
 
 <script setup>
-defineOptions({name: 'AppSearch'})
+    defineOptions({name: 'AppSearch'})
 
 </script>
 

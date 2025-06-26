@@ -29,13 +29,13 @@
 </template>
 
 <script setup>
-defineProps({
-    icon: { type: String, required: true },
-    color: { type: String, default: '#700e01' },
-    size: { type: [String, Number], default: 30 },
-    badge: { type: [String, Number], default: null },
-    badgeColor: { type: String, default: 'red' },
-    classes: { type: [String, Array, Object], default: '' },
-    path: { type: String, required: true },
-});
+    defineProps({
+        icon: { type: String, required: true },
+        color: { type: String, default: '#700e01' },
+        size: { type: [String, Number], default: 30 },
+        badge: { type: [String, Number], default: null },
+        badgeColor: { type: String, default: 'red' },
+        classes: { type: [String, Array, Object], default: '' },
+        path: { type: String, required: true },
+    });
 </script>
