@@ -15,30 +15,15 @@
         <v-spacer></v-spacer>
 
         <!-- NOTE App bar icons Center -->
-        <v-btn
-            stacked
-            v-for="(appBarNavigation, index) in appBarNavigations"
+        <AppIcon 
+            v-for="(item, index) in appBarNavigations" 
             :key="index"
-            :to="appBarNavigation.path"
-            color="#700e01"
-            class="mr-10 ml-10"
-        >
-            <v-badge
-            :content="appBarNavigation.newItems.length"
-            color="red"
-            v-if="appBarNavigation.newItems.length > 0"
-            >
-            <v-icon>{{ appBarNavigation.icon }}</v-icon>
-            </v-badge>
-            <div v-else>
-            <v-icon>{{ appBarNavigation.icon }}</v-icon>
-            </div>
-        </v-btn>
+            :icon="item.icon"
+            :path="item.path"
+            :badge="item.newItems.length > 0 ? item.newItems.length : null"
+        />
 
         <v-spacer></v-spacer>
-
-        <!-- Example component -->
-        <AppIcon icon="mdi-home" />
 
         <!-- NOTE App bar icons right -->
         <v-menu
@@ -113,30 +98,30 @@
 import { ref } from 'vue'
 
     const appBarNavigations = ref([
-    {
-        path: '/',
-        icon: 'mdi-home-outline',
-        model: 'home',
-        newItems: [],
-    },
-    {
-        path: '/connection',
-        icon: 'mdi-account-multiple',
-        model: 'connection',
-        newItems: ['new'],
-    },
-    {
-        path: '/cart',
-        icon: 'mdi-cart-outline',
-        model: 'cart',
-        newItems: ['item1', 'item2'],
-    },
-    {
-        path: '/listing',
-        icon: 'mdi-format-list-bulleted',
-        model: 'listing',
-        newItems: ['itemA', 'itemB', 'itemC'],
-    },
+        {
+            path: '/',
+            icon: 'mdi-home-outline',
+            model: 'home',
+            newItems: [],
+        },
+        {
+            path: '/connection',
+            icon: 'mdi-account-multiple',
+            model: 'connection',
+            newItems: ['new'],
+        },
+        {
+            path: '/cart',
+            icon: 'mdi-cart-outline',
+            model: 'cart',
+            newItems: ['item1', 'item2'],
+        },
+        {
+            path: '/listing',
+            icon: 'mdi-format-list-bulleted',
+            model: 'listing',
+            newItems: ['itemA', 'itemB', 'itemC'],
+        },
     ])
 
     const appBarDropdowns = ref([
