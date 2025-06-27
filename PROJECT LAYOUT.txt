@@ -1,0 +1,29 @@
+resources/js/
+├──>app.js                      ├──>Entry point
+├──>App.vue                     ├──>Root component
+├──>boostrap.js                 ├──>not yet configured
+├──assets/                      ├──styles, images, fonts
+│   └──styles/                  │   └──styles/
+│       └──>main.scss/          │       └──>not yet configured   
+├──components/                  ├──Reusable UI blocks or components
+│   ├──base/                    │   ├──base/
+│   │   └──>AppIcon.vue         │   │   └──>Icons for homes, add friend, cart and listing
+│   │   └──>AppLogo.vue         │   │   └──>Appication Logo
+│   │   └──>AppSearch.vue       │   │   └──>Search Input
+│   └──layouts/                 │   ├──Page-level layouts (with nav, etc.)
+│       └──>AppBar.vue          │   │   └──>Navigation Bar Desing or layout
+├──composables/                 ├──Reusable logic (e.g., useCart, useProduct)
+├──pages/                       ├──Router pages (e.g., Home, ProductList)
+│   └──>Home.vue                │   └──>Home page
+├──plugins/                     ├──Vuetify, Axios, etc.
+│   │──>global-component.js     │   │──>registration of components globally        
+│   └──>vuetify.js              │   └──>vuetify plugins configuration
+├──router/                      ├──Vue Router config
+│   └──>index.js                │   └──>routing and web history
+├──stores/                      ├──Pinia stores (cart, auth, etc.)
+│   └──>productStore.js         │   └──>not yet configured
+├──utils/                       ├──Helpers (e.g., currency, formatDate) not yet configured
+└──views/                       └──views/              
+    └──auth/                        └──for authentication sanctum or idont know yet           
+        └──>Login.vue                   └──>login view for logging in users
+        └──>Register.vue                └──>registration view for registering in users
